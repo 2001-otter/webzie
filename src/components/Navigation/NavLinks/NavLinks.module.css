@@ -1,0 +1,9 @@
+.NavLinks{
+    display: flex;
+    list-style: none;
+}
+
+.NavLinks a {
+    color: black;
+    margin-left: 20px;
+}
