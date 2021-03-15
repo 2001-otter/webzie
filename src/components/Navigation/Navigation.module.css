@@ -1,13 +1,14 @@
 .TopBar {
   position: fixed;
-  width: 100%;    
+  width: 100%;
   /* z-index: 1; */
   display: flex;
   align-items: center;
-  height: 10vh;
+  height: 10%;
   box-sizing: border-box;
   padding: 0 60px;
   background-color: white;
+  border-bottom: none;
 }
 
 .TopBar.scrolled {
@@ -26,7 +27,6 @@
 }
 
 .LogoContainer {
-  font-size: 20px;
   color: white;
 }
 
@@ -38,6 +38,6 @@
 
 @media (max-width: 499px) {
   .DesktopOnly {
-      display: none;
+    display: none;
   }
 }
