@@ -58,7 +58,7 @@ const Landing = (props: any) => {
           </ul>
         </div>
         <div className={styles.Right}>
-          <img src={screenshot} alt="randomtestt"></img>
+          <img src={screenshot} alt="screenshot"></img>
         </div>
       </section>
       <section className={styles.Host}>
