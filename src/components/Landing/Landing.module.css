@@ -1,7 +1,6 @@
 .Landing {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ae84d9;
 
   height: 90vh;
 }
@@ -18,13 +17,14 @@
 }
 
 .TopHalf {
-  background-color: #eee;
+  background-color: #f2f2f2;
   background-image: url("../../assets/img/awan.png"),
     url("../../assets/img/awan2.png");
   background-position: bottom right, top left;
   background-repeat: no-repeat;
   background-size: 50%, 30px;
   padding: 5% 0 5% 10%;
+  border: 1px solid #ae84d9;
   text-align: left;
 }
 
@@ -42,6 +42,7 @@
 
 .BottomHalf {
   background-color: white;
+  padding-bottom: 30px;
 }
 
 .Features {
@@ -58,4 +59,32 @@
 
 .Features li {
   width: 100%;
+}
+
+.User,
+.Host {
+  background-color: #f2f2f2;
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  padding: 60px;
+}
+
+.User ul,
+.Host ul {
+  list-style: none;
+}
+
+.User .Left {
+  text-align: left;
+  margin: 0 60px;
+}
+
+.User .Left ul {
+  padding: 0;
+}
+
+.User .Left li {
+  /* display: flex;
+    align-items: left; */
 }
