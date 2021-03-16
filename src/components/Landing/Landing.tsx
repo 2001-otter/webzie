@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./Landing.module.css";
 import userIcon from "../../assets/img/user-icon.png";
+import screenshot from "../../assets/img/screenshot.png";
 
 const Landing = (props: any) => {
   return (
@@ -57,7 +58,7 @@ const Landing = (props: any) => {
           </ul>
         </div>
         <div className={styles.Right}>
-          <img src={userIcon} alt="random"></img>
+          <img src={screenshot} alt="random"></img>
         </div>
       </section>
       <section className={styles.Host}>
