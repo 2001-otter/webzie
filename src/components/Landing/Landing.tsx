@@ -43,27 +43,40 @@ const Landing = (props: any) => {
         </div>
       </section>
       <section className={styles.User}>
-        <div className={styles.Left}>
+        <div className={styles.Benefits}>
           <h2>Find the webinar you like!</h2>
           <ul>
             <li>
               <h3>Search Engine</h3>
+              <p>
+                Find the perfect webinar for you | Use our filter to get what
+                you want
+              </p>
             </li>
             <li>
               <h3>E-Certificate collector</h3>
+              <p>
+                Download and keep all your certificates in your accounts |
+                Autofill names for a faster process
+              </p>
             </li>
             <li>
               <h3>Personal Calendar</h3>
+              <p>
+                Keep track of all your registered webinars | Get notifications
+                for upcoming events
+              </p>
             </li>
           </ul>
+          <button>Find the webinar now!</button>
         </div>
-        <div className={styles.Right}>
+        <div className={styles.Screenshot}>
           <img src={screenshot} alt="screenshot"></img>
         </div>
       </section>
       <section className={styles.Host}>
-        <div className={styles.Left}></div>
-        <div className={styles.Right}></div>
+        <div className={styles.Benefits}></div>
+        <div className={styles.Screenshot}></div>
       </section>
     </div>
   );
