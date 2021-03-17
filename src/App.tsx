@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import styles from "./App.module.css";
 import AboutUs from "./components/Pages/AboutUs/AboutUs";
@@ -8,19 +8,27 @@ import Layout from "./hoc/Layout/Layout";
 
 function App() {
   return (
-    <div className={styles.App}>
-      <Layout>
-        <Switch>
-          <Route path="/about-us">
-            <AboutUs></AboutUs>
-          </Route>
-          <Route path="/">
-            <Landing></Landing>
-          </Route>
-        </Switch>
-        <Landing></Landing>
-      </Layout>
-    </div>
+    <Switch>
+      <Route path="/login">login</Route>
+      <Route path="/register">register</Route>
+      <Route>
+        <div className={styles.App}>
+          <Layout>
+            <Switch>
+              <Route path="/about-us">
+                <AboutUs></AboutUs>
+              </Route>
+              <Route path="/home">
+                <Landing></Landing>
+              </Route>
+              <Route path="/">
+                <Redirect to="/home"></Redirect>
+              </Route>
+            </Switch>
+          </Layout>
+        </div>
+      </Route>
+    </Switch>
   );
 }
 

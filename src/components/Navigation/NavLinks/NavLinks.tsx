@@ -6,7 +6,7 @@ import styles from "./NavLinks.module.css";
 const NavLinks = (props: any) => {
   return (
     <ul className={styles.NavLinks}>
-      <NavLink to="index">Home</NavLink>
+      <NavLink to="home">Home</NavLink>
       <NavLink to="about-us">About Us</NavLink>
     </ul>
   );
