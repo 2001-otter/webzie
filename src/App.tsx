@@ -1,13 +1,13 @@
-import React from 'react';
-import { Switch } from 'react-router-dom';
+import React from "react";
+import { Switch } from "react-router-dom";
 
-import './App.css';
-import Landing from './components/Landing/Landing';
-import Layout from './hoc/Layout/Layout';
+import styles from "./App.module.css";
+import Landing from "./components/Landing/Landing";
+import Layout from "./hoc/Layout/Layout";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Layout>
         <Landing></Landing>
       </Layout>

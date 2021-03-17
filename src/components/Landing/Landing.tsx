@@ -116,9 +116,7 @@ const Landing = (props: any) => {
           <Webinar></Webinar>
         </div>
       </section>
-      <section className={styles.Contact}>
-        <div>pictures</div>
-      </section>
+      <div className={styles.LineBreak}></div>
     </div>
   );
 };

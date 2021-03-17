@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import styles from './Layout.module.css';
-import Navigation from '../../components/Navigation/Navigation';
+import styles from "./Layout.module.css";
+import Navigation from "../../components/Navigation/Navigation";
+import Contact from "../../components/Contact/Contact";
 
 const Layout = (props: any) => {
-  return(
-    <React.Fragment>
+  return (
+    <div className={styles.Container}>
       <Navigation></Navigation>
-      <main className={styles.Content}>
-        {props.children}
-      </main>
-    </React.Fragment>
+      <main className={styles.Content}>{props.children}</main>
+      <Contact></Contact>
+    </div>
   );
 };
 

@@ -5,9 +5,13 @@
   box-shadow: 2px 3px rgb(238, 227, 227);
   width: 25em;
   /* height: 25em; */
+
+  margin: 2em 1em 2em 1em;
+}
+
+.UpperPart {
   display: flex;
-  flex-wrap: wrap;
-  margin: 2em 2em 2em 2em;
+  /* flex-wrap: wrap; */
 }
 
 .Poster {
@@ -17,10 +21,12 @@
   max-height: 15em;
   object-fit: cover;
   padding: 0.5em;
+  border-radius: 10%;
+  margin-left: 0.5em;
 }
 
 .Info {
-  width: 50%;
+  width: 100%;
   text-align: left;
   font-size: 1em;
 }
@@ -38,7 +44,7 @@
 }
 
 .Host {
-  margin: 1em;
+  /* margin: 1em; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -46,6 +52,7 @@
 
 .Host .Profile {
   display: table;
+  padding-left: 1em;
 }
 
 .Host .Profile strong {
@@ -57,13 +64,15 @@
 .Host button {
   background-color: #169bd5;
   border-radius: 8%;
+  margin-right: 1em;
   width: 8em;
   height: 2em;
   font-size: 0.8em;
 }
 
 .Host img {
-  background-color: black;
+  background-color: white;
+  object-fit: cover;
   border-radius: 50%;
   width: 2em;
   height: 2em;

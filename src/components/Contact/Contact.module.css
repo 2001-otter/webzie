@@ -1,0 +1,47 @@
+.Contact {
+  display: flex;
+}
+
+.Logo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 2em 0 1em 6em;
+}
+
+.Webzie {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+.Webzie img {
+  width: 6em;
+  /* height: 2em; */
+}
+
+.Webzie p {
+  margin: 0 0 0 1em;
+  font-size: 2em;
+}
+
+.SocialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SocialMedia img {
+  width: 2em;
+}
+
+.Info {
+  margin: 2em 0 1em 6em;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* line-height: 3; */
+}
+
+.Info tr {
+  height: 3em;
+}
