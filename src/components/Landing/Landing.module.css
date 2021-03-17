@@ -1,7 +1,7 @@
 .Landing {
   display: flex;
   flex-direction: column;
-
+  margin-top: 70px;
   height: 90vh;
 }
 
@@ -76,7 +76,7 @@
   align-items: left;
   display: flex;
   flex-direction: row;
-  padding: 60px 0 60px 60px;
+  padding: 60px 0 60px 0;
   justify-content: space-between;
 }
 
@@ -94,28 +94,34 @@
   margin: 0;
 }
 
-.User .Benefits {
+:is(.User, .Host) .Benefits {
   text-align: left;
-  padding: 10em;
+  padding: 2em 2em 2em 6em;
 }
 
-.User .Benefits ul {
+:is(.User, .Host) .Benefits ul {
   padding: 0;
 }
 
-.User .Benefits li {
+:is(.User, .Host) .Benefits li {
   /* display: flex;
     align-items: left; */
 }
 
-.User .Screenshot {
+:is(.User, .Host) .Screenshot {
   display: inline;
   margin: 0;
   width: 50%;
 }
 
-.User .Screenshot img {
+:is(.User, .Host) .Screenshot img {
   /* max-height: 200px; */
   max-width: 100%;
   object-fit: cover;
+}
+
+.Recommended .Webinars {
+  background-color: var(--clr-primary-300);
+  padding: 2em;
+  display: flex;
 }

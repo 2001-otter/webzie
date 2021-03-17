@@ -4,6 +4,8 @@ import styles from "./Landing.module.css";
 import userIcon from "../../assets/img/user-icon.png";
 import screenshot from "../../assets/img/screenshot.png";
 
+import Webinar from "./Webinar/Webinar";
+
 const Landing = (props: any) => {
   return (
     <div className={styles.Landing}>
@@ -75,8 +77,47 @@ const Landing = (props: any) => {
         </div>
       </section>
       <section className={styles.Host}>
-        <div className={styles.Benefits}></div>
-        <div className={styles.Screenshot}></div>
+        <div className={styles.Screenshot}>
+          <img src={screenshot} alt="screenshot"></img>
+        </div>
+        <div className={styles.Benefits}>
+          <h2>Find the webinar you like!</h2>
+          <ul>
+            <li>
+              <h3>Search Engine</h3>
+              <p>
+                Find the perfect webinar for you | Use our filter to get what
+                you want
+              </p>
+            </li>
+            <li>
+              <h3>E-Certificate collector</h3>
+              <p>
+                Download and keep all your certificates in your accounts |
+                Autofill names for a faster process
+              </p>
+            </li>
+            <li>
+              <h3>Personal Calendar</h3>
+              <p>
+                Keep track of all your registered webinars | Get notifications
+                for upcoming events
+              </p>
+            </li>
+          </ul>
+          <button>Register your webinar now!</button>
+        </div>
+      </section>
+      <section className={styles.Recommended}>
+        <h2>Recommended</h2>
+        <div className={styles.Webinars}>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+        </div>
+      </section>
+      <section className={styles.Contact}>
+        <div>pictures</div>
       </section>
     </div>
   );

@@ -16,7 +16,8 @@
   justify-content: center;
   width: 18em;
   font-size: 1em;
-  padding: 9px 20px;
+  padding: 0.8em 1.7em;
+  box-sizing: border-box;
   color: white;
   background-color: #5e5de4;
 }

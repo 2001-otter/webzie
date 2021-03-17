@@ -1,0 +1,49 @@
+.Webinar {
+  /* --width: 50%; */
+
+  border: 2px solid black;
+  width: 25em;
+  /* height: 25em; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 2em 2em 2em;
+}
+
+.Poster {
+  /* max-width: 200px; */
+  box-sizing: border-box;
+  width: 50%;
+  max-height: 15em;
+  object-fit: cover;
+  padding: 0.5em;
+}
+
+.Info {
+  width: 50%;
+  text-align: left;
+  font-size: 1em;
+}
+
+.Info .Container {
+  text-align: center;
+}
+
+.Info .Container button {
+  margin: auto;
+  width: 80%;
+  height: 1.5em;
+  padding: 0.2em 0.8em;
+  font-size: 0.8em;
+}
+
+.Host {
+  margin: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Host button {
+  width: 1em;
+  height: 2em;
+}

@@ -1,14 +1,15 @@
 .TopBar {
   position: fixed;
   width: 100%;
-  /* z-index: 1; */
+  top: 0;
+  /* border: 1px transparent black; */
+  box-shadow: 0 2px 2px -0.5px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   height: 10%;
   box-sizing: border-box;
   padding: 0 60px;
   background-color: white;
-  border-bottom: none;
 }
 
 .TopBar.scrolled {
