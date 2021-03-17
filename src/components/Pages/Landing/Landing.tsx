@@ -1,8 +1,8 @@
 import React from "react";
 
 import styles from "./Landing.module.css";
-import userIcon from "../../assets/img/user-icon.png";
-import screenshot from "../../assets/img/screenshot.png";
+import userIcon from "../../../assets/img/user-icon.png";
+import screenshot from "../../../assets/img/screenshot.png";
 
 import Webinar from "./Webinar/Webinar";
 

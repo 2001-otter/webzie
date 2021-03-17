@@ -5,11 +5,11 @@ import NavigationItem from "./NavItem/NavItem";
 
 const navigationItems = () => (
   <div className={styles.rightItems}>
-    <a href="search.php">
+    <a href="login">
       <span>Login</span>
     </a>
 
-    <a href="profile.php">
+    <a href="register">
       <span>Register</span>
     </a>
 
