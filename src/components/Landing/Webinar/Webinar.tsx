@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-import DummyImage from "../../../assets/img/logo.jpg";
+import dummyImage from "../../../assets/img/logo.jpg";
 import styles from "./Webinar.module.css";
 
 class Webinar extends Component {
   render() {
     return (
       <div className={styles.Webinar}>
-        <img className={styles.Poster} src={DummyImage} alt="poster"></img>
+        <img className={styles.Poster} src={dummyImage} alt="poster"></img>
         <div className={styles.Info}>
           <h5>Pendidikan di Era New Normal</h5>
           <p style={{ fontSize: "0.8em" }}>
@@ -32,7 +32,10 @@ class Webinar extends Component {
         </div>
         <hr style={{ width: "80%" }} />
         <div className={styles.Host}>
-          <strong>UNDIKSJA</strong>
+          <div className={styles.Profile}>
+            <img src={dummyImage} alt="profile"></img>
+            <strong>UNDIKSJA</strong>
+          </div>
           <button>More info</button>
         </div>
       </div>

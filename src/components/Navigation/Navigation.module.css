@@ -28,13 +28,20 @@
 }
 
 .LogoContainer {
-  color: white;
+  /* width: 5em; */
+  display: flex;
 }
 
 .LogoContainer img {
-  width: 40px;
-  height: auto;
-  margin-right: 12px;
+  object-fit: scale-down;
+  width: 4em;
+  margin-right: 1em;
+}
+
+.LogoContainer p {
+  font-size: 1.3em;
+  font-weight: 100;
+  width: 100%;
 }
 
 @media (max-width: 499px) {

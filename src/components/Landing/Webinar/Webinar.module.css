@@ -1,7 +1,8 @@
 .Webinar {
   /* --width: 50%; */
 
-  border: 2px solid black;
+  border: 1px solid rgba(230, 215, 215, 0.897);
+  box-shadow: 2px 3px rgb(238, 227, 227);
   width: 25em;
   /* height: 25em; */
   display: flex;
@@ -43,7 +44,27 @@
   justify-content: space-between;
 }
 
+.Host .Profile {
+  display: table;
+}
+
+.Host .Profile strong {
+  padding-left: 0.5em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .Host button {
-  width: 1em;
+  background-color: #169bd5;
+  border-radius: 8%;
+  width: 8em;
+  height: 2em;
+  font-size: 0.8em;
+}
+
+.Host img {
+  background-color: black;
+  border-radius: 50%;
+  width: 2em;
   height: 2em;
 }
