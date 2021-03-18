@@ -1,5 +1,18 @@
 .SideBar {
-  margin: 1em 1em 0 3em;
-
+  margin: 2.5em 6em 0 4em;
+  font-size: 1em;
   text-align: left;
+  /* width: 30%; */
+  white-space: nowrap;
+}
+
+.SideHeader {
+  display: flex;
+  margin: 0 0 0.5em 0;
+}
+
+.SideHeader img {
+  object-fit: contain;
+  max-width: 1.5em;
+  margin-right: 1em;
 }

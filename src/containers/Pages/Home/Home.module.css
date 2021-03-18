@@ -1,4 +1,32 @@
 .Home {
-  display: flex;
   margin-top: 70px;
+}
+
+.UpperHalf {
+  display: flex;
+  flex-grow: 0;
+}
+
+.HomePoster {
+  margin: 2em 5em 1em 0;
+}
+
+.HomePoster img {
+  max-width: 100%;
+}
+
+.MainRec {
+  text-align: left;
+}
+
+.MainRec h4 {
+  margin: 0;
+  padding-left: 1em;
+  font-size: 1.3em;
+}
+
+.MainWebinars {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }

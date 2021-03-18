@@ -8,6 +8,12 @@ import SideItem from "./SideItem/SideItem";
 const SideBar = (props: any) => {
   return (
     <div className={styles.SideBar}>
+      <div className={styles.SideHeader}>
+        <img src={dummy} alt="homeIcon"></img>
+        <p>
+          <b>Recommended for you</b>
+        </p>
+      </div>
       <SideItem>My Calendar</SideItem>
       <SideItem>Badge</SideItem>
       <SideItem>My Webinars</SideItem>
