@@ -4,7 +4,7 @@ import styles from "./Landing.module.css";
 import userIcon from "../../../assets/img/user-icon.png";
 import screenshot from "../../../assets/img/screenshot.png";
 
-import Webinar from "./Webinar/Webinar";
+import Webinar from "../../../containers/Webinar/Webinar";
 
 const Landing = (props: any) => {
   return (

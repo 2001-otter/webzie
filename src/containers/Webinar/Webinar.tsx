@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import dummyImage from "../../../../assets/img/logo-square.png";
-import poster from "../../../../assets/img/poster.jpg";
+import dummyImage from "../../assets/img/logo-square.png";
+import poster from "../../assets/img/poster.jpg";
 import styles from "./Webinar.module.css";
 
 class Webinar extends Component {

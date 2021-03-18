@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 import styles from "./App.module.css";
 import AboutUs from "./components/Pages/AboutUs/AboutUs";
+import Home from "./containers/Pages/Home/Home";
 import Landing from "./components/Pages/Landing/Landing";
 import Layout from "./hoc/Layout/Layout";
 
@@ -19,7 +20,8 @@ function App() {
                 <AboutUs></AboutUs>
               </Route>
               <Route path="/home">
-                <Landing></Landing>
+                <Home></Home>
+                {/* <Landing></Landing> */}
               </Route>
               <Route path="/">
                 <Redirect to="/home"></Redirect>

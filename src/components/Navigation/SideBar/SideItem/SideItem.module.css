@@ -1,0 +1,14 @@
+.SideItem {
+  display: flex;
+  margin: 0 0 0.5em 0;
+}
+
+img {
+  object-fit: contain;
+  max-width: 1.5em;
+  margin-right: 1em;
+}
+
+p {
+  /* margin-top: 0; */
+}
