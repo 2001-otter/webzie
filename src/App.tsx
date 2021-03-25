@@ -17,11 +17,11 @@ function App() {
           <Layout>
             <Switch>
               <Route path="/about-us">
-                <AboutUs></AboutUs>
+                {/* <AboutUs></AboutUs> */}
+                <Landing></Landing>
               </Route>
               <Route path="/home">
                 <Home></Home>
-                {/* <Landing></Landing> */}
               </Route>
               <Route path="/">
                 <Redirect to="/home"></Redirect>
