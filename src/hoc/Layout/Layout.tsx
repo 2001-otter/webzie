@@ -7,6 +7,7 @@ import Contact from "../../components/Contact/Contact";
 const Layout = (props: any) => {
   return (
     <div className={styles.Container}>
+      {/* if auth => NavAuth */}
       <NavUnauth></NavUnauth>
       <main className={styles.Content}>{props.children}</main>
       <Contact></Contact>
