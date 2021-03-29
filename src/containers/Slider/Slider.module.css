@@ -1,17 +1,19 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header p {
+  margin-right: 8em;
+}
 .Slider {
   margin: auto;
-  margin-top: 5em;
+  margin-top: 2.5em;
   width: 90%;
   /* background-color: black; */
 }
 
 .Slide {
   justify-content: center;
-  width: auto;
-}
-
-.SliderButton {
-  background-color: blue;
-  background: blue;
-  display: "block";
+  /* width: auto; */
 }
