@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 import homePoster from "../../../assets/img/home-poster.png";
 import SideBar from "../../../components/Navigation/SideBar/SideBar";
 import Webinar from "../../Webinar/Webinar";
-import WebinarSlider from "../../WebinarSlider/WebinarSlider";
+import Slider from "../../Slider/Slider";
 
 class Home extends Component {
   render() {
@@ -26,8 +26,8 @@ class Home extends Component {
           </div>
         </div>
         <div className={styles.BottomHalf}>
-          <WebinarSlider>Money and Investmenst</WebinarSlider>
-          <WebinarSlider>Education</WebinarSlider>
+          <Slider>Money and Investmenst</Slider>
+          <Slider>Education</Slider>
         </div>
         <div className={styles.Footer}>
           <button>Register your webinar now!</button>
