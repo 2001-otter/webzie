@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import styles from "./Slider.module.css";
-import Webinar from "../Webinar/Webinar";
+import Webinar from "../../Webinar/Webinar";
 
 import Slick from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -52,23 +52,17 @@ class Slider extends Component {
     };
 
     return (
-      <div className={styles.Slider}>
-        <div className={styles.Header}>
-          <h3>{this.props.children}</h3>
-          <p>see all</p>
-        </div>
-        <Slick {...settings}>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-        </Slick>
-      </div>
+      <Slick {...settings}>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+        <Webinar></Webinar>
+      </Slick>
     );
   }
 }

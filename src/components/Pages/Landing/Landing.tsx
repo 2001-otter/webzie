@@ -4,7 +4,7 @@ import styles from "./Landing.module.css";
 import userIcon from "../../../assets/img/user-icon.png";
 import screenshot from "../../../assets/img/screenshot.png";
 
-import Webinar from "../../../containers/Webinar/Webinar";
+import Slider from "../../../containers/WebinarSlider/Slider/Slider";
 
 const Landing = (props: any) => {
   return (
@@ -108,12 +108,20 @@ const Landing = (props: any) => {
           <button>Register your webinar now!</button>
         </div>
       </section>
+      <h2
+        style={{
+          backgroundColor: "#f2f2f2",
+          marginTop: 0,
+          paddingLeft: "7em",
+          paddingBottom: "1em",
+          textAlign: "left",
+        }}
+      >
+        Recommended
+      </h2>
       <section className={styles.Recommended}>
-        <h2>Recommended</h2>
         <div className={styles.Webinars}>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
-          <Webinar></Webinar>
+          <Slider></Slider>
         </div>
       </section>
       <div className={styles.LineBreak}></div>

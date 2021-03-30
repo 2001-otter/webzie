@@ -6,7 +6,7 @@ import dummy from "../../../../assets/img/facebook.png";
 const SideItem = (props: any) => {
   return (
     <div className={styles.SideItem}>
-      <img src={dummy} alt="dummy"></img>
+      <img src={props.img} alt="dummy"></img>
       <p>{props.children}</p>
     </div>
   );
