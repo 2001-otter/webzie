@@ -52,53 +52,21 @@ class Slider extends Component {
     };
 
     return (
-      // <Slick {...settings}>
-      //   <div className={[styles.Slide, styles.First].join(" ")}>
-      //     <Webinar></Webinar>
-      //     <Webinar></Webinar>
-      //     <Webinar></Webinar>
-      //   </div>
-      //   <div className={styles.Slide}>
-      //     <Webinar></Webinar>
-      //     <Webinar></Webinar>
-      //     <Webinar></Webinar>
-      //   </div>
-      //   <div className={styles.Slide}>
-      //     <Webinar></Webinar>
-      //     <Webinar></Webinar>
-      //     <Webinar></Webinar>
-      //   </div>
-      // </Slick>
-
       <div className={styles.Slider}>
+        <div className={styles.Header}>
+          <h3>{this.props.children}</h3>
+          <p>see all</p>
+        </div>
         <Slick {...settings}>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
-          <div className={styles.Slide}>
-            <Webinar></Webinar>
-          </div>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
+          <Webinar></Webinar>
         </Slick>
       </div>
     );

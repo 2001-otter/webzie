@@ -3,10 +3,11 @@
 
   border: 1px solid rgba(230, 215, 215, 0.897);
   box-shadow: 2px 3px rgb(238, 227, 227);
-  width: 25em;
+  width: 26.2em;
   /* height: 25em; */
 
   margin: 0 1em 0 1em;
+  align-items: center;
   border-radius: 5%;
 }
 
