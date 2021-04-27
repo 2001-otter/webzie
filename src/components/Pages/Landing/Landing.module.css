@@ -15,28 +15,82 @@
   background-color: #5e5de4; */
 }
 
-.TopHalf {
+.Dots {
+  position: absolute;
+  bottom: 25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.Slide1 {
   background-color: #f2f2f2;
-  background-image: url("../../../assets/img/awan.png"),
-    url("../../../assets/img/awan2.png");
+
+  background-image: url("../../../assets/img/awan2_slide1.png"),
+    url("../../../assets/img/awan1_slide1.png");
+
   background-position: bottom right, top left;
   background-repeat: no-repeat;
-  background-size: 50%, 30px;
-  padding: 5% 0 5% 10%;
-  border: 1px solid #ae84d9;
+  background-size: contain, 25%;
+  padding: 8% 0 5% 12%;
+  /* border: 1px solid #ae84d9; */
   text-align: left;
 }
 
-.TopHalf strong {
+.Slide1 strong {
   font-size: 24px;
 }
 
-.TopHalf p {
+.Slide1 p {
   white-space: pre-line;
   line-height: 2em;
 }
 
-.TopHalf button {
+.Slide2 {
+  background-image: url("../../../assets/img/awan1_slide2.png");
+  background-color: #f2f2f2;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 8% 0 5% 12%;
+  /* border: 1px solid #ae84d9; */
+}
+
+.Slide2 .Container {
+  margin-right: 30rem;
+  float: right;
+}
+
+.Slide2 strong {
+  font-size: 24px;
+}
+
+.Slide2 p {
+  white-space: pre-line;
+  line-height: 2em;
+}
+
+.Slide3 {
+  background-color: #f2f2f2;
+  padding: 8% 0 5% 12%;
+  /* border: 1px solid #ae84d9; */
+}
+
+.Slide3 .Container {
+  margin-right: 30rem;
+  float: right;
+}
+
+.Slide3 strong {
+  font-size: 24px;
+}
+
+.Slide3 p {
+  white-space: pre-line;
+  line-height: 2em;
 }
 
 .BottomHalf {

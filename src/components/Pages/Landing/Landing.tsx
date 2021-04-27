@@ -1,24 +1,97 @@
 import React from "react";
 
+import "slick-carousel/slick/slick.css";
+import "./slick-theme.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import styles from "./Landing.module.css";
 import userIcon from "../../../assets/img/user-icon.png";
 import screenshot from "../../../assets/img/screenshot.png";
 
 import Slider from "../../../containers/WebinarSlider/Slider/Slider";
+import Slick from "react-slick";
 
 const Landing = (props: any) => {
+  function ArrowRight(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          zIndex: "20",
+          left: "25px",
+          display: "block",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function ArrowLeft(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          right: "25px",
+          display: "block",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  const settings = {
+    infinite: true,
+    dots: true,
+    arrows: true,
+    prevArrow: <ArrowRight />,
+    nextArrow: <ArrowLeft />,
+    // dotsClass: styles.Dots,
+    // customPaging: () => {
+    //   return <p>test</p>;
+    // },
+  };
+
   return (
     <div className={styles.Landing}>
       <section className={styles.Header}>
-        <div className={styles.TopHalf}>
-          <strong>Find the Webinar you need.</strong>
-          <p>
-            Now you can FIND the Webinar,
-            <br />
-            that suits you!
-          </p>
-          <button>Find your webinar now!</button>
-        </div>
+        {/* TopHalf */}
+        <Slick {...settings}>
+          <div className={styles.Slide1}>
+            <strong>Find the Webinar you need.</strong>
+            <p>
+              Now you can FIND the Webinar,
+              <br />
+              that suits you!
+            </p>
+            <button>Find your webinar now!</button>
+          </div>
+          <div className={styles.Slide2}>
+            <div className={styles.Container}>
+              <strong>Register your webinar now!</strong>
+              <p>
+                With our feature, you can manage
+                <br />
+                your webinar with just an app
+              </p>
+              <button>Register your webinar</button>
+            </div>
+          </div>
+          <div className={styles.Slide3}>
+            <div className={styles.Container}>
+              <strong>Register your webinar now!</strong>
+              <p>
+                With our feature, you can manage
+                <br />
+                your webinar with just an app
+              </p>
+              <button>Register your webinar</button>
+            </div>
+          </div>
+        </Slick>
         <div className={styles.BottomHalf}>
           <h3>How can we help you?</h3>
           <ul className={styles.Features}>
